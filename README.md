@@ -1,16 +1,15 @@
 # LinAlg4DataScience
-Code that accompanies the book "Linear Algebra for Data Science"
+책과 함께 제공되는 코드입니다. 
+"데이터 과학자를 위한 실전 선형대수학"
 
-Link to the book on amazon:
+원서 구매 링크:
 https://www.amazon.com/Practical-Linear-Algebra-Data-Science/dp/1098120612/
 
-E-version viewable for O'Reilly members:
-https://www.oreilly.com/library/view/practical-linear-algebra/9781098120603/
+번역서 구매 링크:
 
 
-This repository contains all the Python code that accompanies the book. The code probably isn't useful without the book.
+이 리포지토리에는 책과 함께 제공되는 모든 Python 코드가 포함되어 있습니다. 책이 없으면 코드가 유용하지 않을 수도 있습니다.
 
-
-### All of the exercises have accompanying YT videos!
-The videos provide more explanation and context for the problems, their solutions, and the code. Check it out!
+### 모든 연습 문제에는 YT 동영상이 함께 제공됩니다!
+동영상은 문제, 해결책, 코드에 대한 자세한 설명과 맥락을 제공합니다. 확인해 보세요!
 https://www.youtube.com/watch?v=Vpei9S9mFyM&list=PLn0OLiymPak3REyB3XNqqqsRAhZ3LSEH8
