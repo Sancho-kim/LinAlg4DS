@@ -12,6 +12,6 @@ https://www.amazon.com/Practical-Linear-Algebra-Data-Science/dp/1098120612/
 
 ### 모든 연습 문제에는 YT 동영상이 함께 제공됩니다!
 (**참고 동영상의 넘버링은 한국어판 번호의 +1을 해야 합니다)
-
+<br>
 동영상은 문제, 해결책, 코드에 대한 자세한 설명을 제공합니다. 확인해 보세요!
 https://www.youtube.com/watch?v=Vpei9S9mFyM&list=PLn0OLiymPak3REyB3XNqqqsRAhZ3LSEH8
