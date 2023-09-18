@@ -2,9 +2,13 @@
 책과 함께 제공되는 코드입니다. 
 
 도서 구매 링크
+<br>
 한빛출판네트워크:
+<br>
 YES24: 
+<br>
 알라딘:
+<br>
 
 원서 구매 링크
 https://www.amazon.com/Practical-Linear-Algebra-Data-Science/dp/1098120612/
