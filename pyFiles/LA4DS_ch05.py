@@ -34,7 +34,7 @@ plt.xlim(xlim)
 plt.ylim(xlim)
 plt.legend()
 plt.grid()
-plt.savefig('Figure_06_01.png',dpi=300)
+plt.savefig('Figure_05_01.png',dpi=300)
 plt.show()
 
 # some matrix
@@ -65,7 +65,7 @@ for i in range(2):
 # set the legends and subplot letters
 for i in [0,1]: axs[i].legend([f'A{i+1}$_{{[:,0]}}$',f'A{i+1}$_{{[:,1]}}$'])
 
-plt.savefig('Figure_06_02.png',dpi=300)
+plt.savefig('Figure_05_02.png',dpi=300)
 plt.show()
 
 
@@ -90,7 +90,7 @@ ax.plot_surface(xx,yy,z1,alpha=.2)
 ax.plot([0, A[0,0]],[0, A[1,0]],[0, A[2,0]],color=color[0],linewidth=4)
 ax.plot([0, A[0,1]],[0, A[1,1]],[0, A[2,1]],color=color[1],linewidth=4)
 
-plt.savefig('Figure_06_03.png',dpi=300)
+plt.savefig('Figure_05_03.png',dpi=300)
 plt.show()
 
 
@@ -138,7 +138,7 @@ plt.ylim(xlim)
 plt.grid()
 plt.legend()
 
-plt.savefig('Figure_06_04.png',dpi=300)
+plt.savefig('Figure_05_04.png',dpi=300)
 plt.show()
 
 
@@ -168,7 +168,7 @@ for si in range(len(scalingVals)):
 plt.plot(scalingVals,np.mean(matrixNorms,axis=1),'ko-')
 plt.xlabel('Matrix scalar')
 plt.ylabel('Matrix Frobenius norm')
-plt.savefig('Figure_06_07.png',dpi=300)
+plt.savefig('Figure_05_07.png',dpi=300)
 plt.show()
 
 # check that norm=0 for zeros matrix
@@ -287,7 +287,7 @@ for i in range(3):
   axs[i].set_ylabel(resultsNames[i])
 
 plt.tight_layout()
-plt.savefig('Figure_06_06.png',dpi=300)
+plt.savefig('Figure_05_06.png',dpi=300)
 plt.show()
 
 
@@ -386,7 +386,7 @@ for i in range(2):
   axs[i].set_title(f'Rank of A{s[i]}B')
 
 
-plt.savefig('Figure_06_09.png',dpi=300)
+plt.savefig('Figure_05_09.png',dpi=300)
 plt.tight_layout()
 plt.show()
 
@@ -469,7 +469,7 @@ plt.plot(ns**2,np.log(np.mean(dets,axis=1)),'ks-',linewidth=3)
 plt.xlabel('Number of elements in the matrix')
 plt.ylabel('Log determinant')
 plt.title('Empirical determinants of singular matrices')
-plt.savefig('Figure_06_10.png',dpi=300)
+plt.savefig('Figure_05_10.png',dpi=300)
 plt.show()
 
 
