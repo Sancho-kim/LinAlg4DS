@@ -23,12 +23,12 @@ data
 
 data.plot(x='Date',y='Rented Bike Count',color='k',marker='.',linestyle='none',
           figsize=(12,6),ylabel='Rented Bike Count')
-plt.savefig('Figure_12_1a.png',dpi=300)
+plt.savefig('Figure_11_1a.png',dpi=300)
 plt.show()
 
 data.plot(x='Date',y='Rainfall(mm)',color='k',marker='.',linestyle='none',
           figsize=(12,6),ylabel='Rainfall (mm)');
-plt.savefig('Figure_12_1b.png',dpi=300)
+plt.savefig('Figure_11_1b.png',dpi=300)
 plt.show()
 
 # Examine the correlation matrix
@@ -53,7 +53,7 @@ plt.yticks(range(4),labels=colsshort)
 for (j,i),num in np.ndenumerate(R.values):
   plt.text(i,j,f'{num:.2f}',color=[.8,.8,.8],ha='center',va='center',fontweight='bold',fontsize=15)
 
-plt.savefig('Figure_12_02.png',dpi=300)
+plt.savefig('Figure_11_02.png',dpi=300)
 plt.show()
 
 # binarize the seasons
@@ -77,7 +77,7 @@ plt.ylabel('Observation')
 plt.xlabel('Regressor')
 plt.title('Design matrix')
 plt.xticks(range(3),labels=['Rainfall','Season','Intercept'])
-plt.savefig('Figure_12_3a.png',dpi=300)
+plt.savefig('Figure_11_3a.png',dpi=300)
 plt.show()
 
 # plot the data
@@ -90,7 +90,7 @@ plt.plot(desmat[desmat[:,1]==1,0],y[desmat[:,1]==1],'s',markerfacecolor=(1,0,0,.
 plt.xlabel('Rainfall')
 plt.ylabel('Bikes rented')
 plt.legend()
-plt.savefig('Figure_12_3b.png',dpi=300)
+plt.savefig('Figure_11_3b.png',dpi=300)
 plt.show()
 
 # run the regression
@@ -114,7 +114,7 @@ plt.legend()
 plt.xlabel('Observed bike counts')
 plt.ylabel('Predicted bike counts')
 plt.title(f'Model fit ($R^2$): {modelfit:.3f}')
-plt.savefig('Figure_12_04.png',dpi=300)
+plt.savefig('Figure_11_04.png',dpi=300)
 plt.show()
 
 import statsmodels.api as sm
@@ -154,7 +154,7 @@ axs[1].imshow(desmat,cmap='gray',aspect='auto',vmin=-2,vmax=2,extent=[-.5,maxord
 axs[1].set(xticks=range(maxorder+1),xticklabels=xlab)
 axs[1].set_title('Design matrix')
 
-plt.savefig('Figure_12_05.png',dpi=300)
+plt.savefig('Figure_11_05.png',dpi=300)
 plt.show()
 
 
@@ -172,7 +172,7 @@ plt.plot(year,doubleTime,'ks-',markersize=10)
 
 plt.xlabel('Year')
 plt.ylabel('Doubling time (years)')
-plt.savefig('Figure_12_06.png',dpi=300)
+plt.savefig('Figure_11_06.png',dpi=300)
 plt.show()
 
 ## DATA CITATION: 
@@ -206,7 +206,7 @@ plt.plot(year,yHat,'o-',color=[.7,.7,.7],label=r'$\hat{y}$')
 plt.legend()
 plt.xlabel('Year')
 plt.ylabel('Doubling time (years)')
-plt.savefig('Figure_12_07.png',dpi=300)
+plt.savefig('Figure_11_07.png',dpi=300)
 plt.show()
 
 # Now using polyfit
@@ -298,7 +298,7 @@ plt.plot(y,yHat,'o',markerfacecolor=(0,0,0,.1),markeredgecolor=(0,0,0,.9))
 plt.xlabel('Observed bike counts')
 plt.ylabel('Predicted bike counts')
 plt.title(f'Model fit ($R^2$): {modelfit:.3f}')
-plt.savefig('Figure_12_09.png',dpi=300)
+plt.savefig('Figure_11_09.png',dpi=300)
 plt.show()
 
 
@@ -393,8 +393,8 @@ print(f"inv(X'X + {gamma}*I) size: {leftinv.shape}")
 print(f"inv(X'X + {gamma}*I) rank: {np.linalg.matrix_rank(leftinv)}")
 
 ### Note about this code:
-# Exercise 7 of chapter 13 relies on this code. Use the following toggle when you're on chapter 13 :)
-I_am_reading_chapter_13 = False
+# Exercise 7 of chapter 12 relies on this code. Use the following toggle when you're on chapter 12 :)
+I_am_reading_chapter_12 = False
 
 
 # range of gamma parameters
@@ -411,7 +411,7 @@ for i in range(len(gs)):
   # create lambda
   l = gs[i]*np.linalg.norm(desmat,'fro')**2
 
-  if I_am_reading_chapter_13: # exercise 13.7
+  if I_am_reading_chapter_12: # exercise 12.7
     l = gs[i]*np.mean(np.linalg.eig(desmat.T@desmat)[0])
 
   # compute left-inverse
@@ -427,7 +427,7 @@ for i in range(len(gs)):
 
   ### repeat for the multicollinear model (condensed for convenience)
   l       = gs[i]*np.linalg.norm(desmatM,'fro')**2
-  if I_am_reading_chapter_13: # exercise 13.6
+  if I_am_reading_chapter_12: # exercise 12.6
     l     = gs[i]*np.mean(np.linalg.eig(desmatM.T@desmatM)[0])
   leftinv = np.linalg.inv(desmatM.T@desmatM + l*np.eye(desmatM.shape[1])) @ desmatM.T
   b       = leftinv @ y
@@ -444,7 +444,7 @@ plt.xlabel('Regularization $\lambda$')
 plt.ylabel('$R^2$ fit to data')
 plt.ylim([.27,.32])
 plt.legend()
-plt.savefig('Figure_12_10.png',dpi=300)
+plt.savefig('Figure_11_10.png',dpi=300)
 plt.show()
 
 
@@ -465,7 +465,7 @@ for oi in range(N):
   axs[oi].set_title('Order=%g' %oi)
 
 plt.tight_layout()
-plt.savefig('Figure_12_11.png',dpi=300)
+plt.savefig('Figure_11_11.png',dpi=300)
 plt.show()
 
 
@@ -518,7 +518,7 @@ plt.xlabel('Slope')
 plt.ylabel('Intercept')
 plt.title('SSE (fit of model to data)')
 plt.legend()
-plt.savefig('Figure_12_08.png',dpi=300)
+plt.savefig('Figure_11_08.png',dpi=300)
 plt.show()
 
 # print out the results
