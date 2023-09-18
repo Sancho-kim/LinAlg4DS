@@ -85,7 +85,7 @@ plt.figure(figsize=(6,6))
 plt.imshow(covMat,vmin=-clim,vmax=clim,cmap='gray')
 plt.colorbar()
 plt.title('Data covariance matrix')
-plt.savefig('Figure_07_01.png',dpi=300)
+plt.savefig('Figure_06_01.png',dpi=300)
 plt.show()
 
 
@@ -121,7 +121,7 @@ plt.xlim([-1.2,1.2])
 plt.ylim([-1.2,1.2])
 plt.legend()
 plt.title(f'Rotation by {np.rad2deg(th):.0f} degrees.')
-plt.savefig('Figure_07_02.png',dpi=300)
+plt.savefig('Figure_06_02.png',dpi=300)
 plt.show()
 
 
@@ -220,7 +220,7 @@ ax[1,1].set_title("Scipy's convolution")
 
 # for i in ax.flatten(): i.axis('off')
 
-plt.savefig('Figure_07_04b.png',dpi=300)
+plt.savefig('Figure_06_04b.png',dpi=300)
 plt.show()
 
 
@@ -234,7 +234,7 @@ print(bathtub.shape)
 # let's see what the famous Bathtub Museum looks like
 fig = plt.figure(figsize=(10,6))
 plt.imshow(bathtub)
-plt.savefig('Figure_07_05a.png',dpi=300)
+plt.savefig('Figure_06_05a.png',dpi=300)
 plt.show()
 
 # transform image to 2D for convenience (not necessary for convolution!)
@@ -255,7 +255,7 @@ smooth_bathtub = convolve2d(bathtub2d,kernel,mode='same')
 
 fig = plt.figure(figsize=(10,6))
 plt.imshow(smooth_bathtub,cmap='gray')
-plt.savefig('Figure_07_05b.png',dpi=300)
+plt.savefig('Figure_06_05b.png',dpi=300)
 plt.show()
 
 
@@ -285,7 +285,7 @@ fig.colorbar(h1,ax=axs[0],fraction=.045)
 fig.colorbar(h2,ax=axs[1],fraction=.045)
 
 plt.tight_layout()
-plt.savefig('Figure_07_06.png',dpi=300)
+plt.savefig('Figure_06_06.png',dpi=300)
 plt.show()
 
 # a bit of code to explore specific pairs of correlations
@@ -318,7 +318,7 @@ fig.colorbar(h2,ax=axs[1],fraction=.045)
 fig.colorbar(h3,ax=axs[2],fraction=.045)
 
 plt.tight_layout()
-plt.savefig('Figure_07_07.png',dpi=300)
+plt.savefig('Figure_06_07.png',dpi=300)
 plt.show()
 
 ??np.corrcoef
@@ -352,7 +352,7 @@ plt.axis('square')
 plt.xlim([-2,2])
 plt.ylim([-2,2])
 plt.legend()
-plt.savefig('Figure_07_08.png',dpi=300)
+plt.savefig('Figure_06_08.png',dpi=300)
 plt.show()
 
 
@@ -440,7 +440,7 @@ for i in range(smooth_bathtub.shape[2]):
   # now run convolution
   smooth_bathtub[:,:,i] = convolve2d(bathtub[:,:,i],kernel,mode='same')
 
-plt.savefig('Figure_07_10.png',dpi=300)
+plt.savefig('Figure_06_10.png',dpi=300)
 plt.show() # close the kernels figure
 
 
@@ -482,7 +482,7 @@ convres = convolve2d(bathtub2d,HK,mode='same')
 ax[1,1].imshow(convres,cmap='gray',vmin=0,vmax=.01)
 ax[1,1].axis('off')
 
-plt.savefig('Figure_07_11.png',dpi=300)
+plt.savefig('Figure_06_11.png',dpi=300)
 plt.show()
 
 
