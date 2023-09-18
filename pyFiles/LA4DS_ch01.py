@@ -79,7 +79,7 @@ plt.axis([-3,3,-3,3])
 plt.xlabel('$v_0$')
 plt.ylabel('$v_1$')
 plt.title('Vector $\mathbf{v}$ in various locations')
-plt.savefig('Figure_02_01.png',dpi=300) # write out the fig to a file
+plt.savefig('Figure_01_01.png',dpi=300) # write out the fig to a file
 plt.show()
 
 # Using 2D vectors here instead of 3D vectors in the book to facilitate visualization
@@ -162,7 +162,7 @@ for s in scalars:
   i+=1 # update axis counter
 
 plt.tight_layout()
-plt.savefig('Figure_02_03.png',dpi=300)
+plt.savefig('Figure_01_03.png',dpi=300)
 plt.show()
 
 
@@ -222,7 +222,7 @@ plt.axis('square')
 plt.axis([-6,6,-6,6])
 plt.legend([a1,a2,a3],['v','w','v+w'])
 plt.title('Vectors $\mathbf{v}$, $\mathbf{w}$, and $\mathbf{v+w}$')
-plt.savefig('Figure_02_02a.png',dpi=300) # write out the fig to a file
+plt.savefig('Figure_01_02a.png',dpi=300) # write out the fig to a file
 plt.show()
 
 # vector difference
@@ -243,7 +243,7 @@ plt.axis('square')
 plt.axis([-6,6,-6,6])
 plt.legend([a1,a2,a3],['v','w','v-w'])
 plt.title('Vectors $\mathbf{v}$, $\mathbf{w}$, and $\mathbf{v-w}$')
-plt.savefig('Figure_02_02b.png',dpi=300)
+plt.savefig('Figure_01_02b.png',dpi=300)
 plt.show()
 
 
@@ -436,7 +436,7 @@ plt.plot([0,t_perp[0]],[0,t_perp[1]],'k:',linewidth=3,label=r'$\mathbf{t}_{\perp
 
 plt.axis('equal')
 plt.legend()
-plt.savefig('Figure_02_08.png',dpi=300)
+plt.savefig('Figure_01_08.png',dpi=300)
 plt.show()
 
 # Replace t_para in the previous exercise with the line below:
