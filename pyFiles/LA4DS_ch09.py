@@ -109,7 +109,7 @@ for a in axs:
 
 fig.colorbar(h,ax=axs[-1],fraction=.05)
 plt.tight_layout()
-plt.savefig('Figure_10_01.png',dpi=300)
+plt.savefig('Figure_09_01.png',dpi=300)
 plt.show()
 
 
@@ -158,7 +158,7 @@ axs[2].imshow(U,vmin=-1,vmax=1,cmap='gray')
 axs[2].set_title(f'U, rank={np.linalg.matrix_rank(U)}')
 
 plt.tight_layout()
-plt.savefig('Figure_10_02.png',dpi=300)
+plt.savefig('Figure_09_02.png',dpi=300)
 plt.show()
 
 np.round(L,2)
