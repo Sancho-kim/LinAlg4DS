@@ -437,7 +437,7 @@ print(np.sort(np.linalg.eig(A)[0]))
 
 
 
-# Refer back to the code for Chapter 12, exercise 4.
+# Refer back to the code for Chapter 11, exercise 4.
 
 
 
