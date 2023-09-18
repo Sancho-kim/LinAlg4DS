@@ -47,7 +47,7 @@ plt.grid(linestyle='--',color=[.8,.8,.8])
 plt.xlim([-7,7])
 plt.ylim([-7,7])
 plt.legend()
-plt.savefig('Figure_03_04.png',dpi=300)
+plt.savefig('Figure_02_04.png',dpi=300)
 plt.show()
 
 
@@ -113,7 +113,7 @@ plt.xlim(xlim)
 plt.ylim(xlim)
 plt.grid()
 plt.text(-4.5,4.5,'A)',fontweight='bold',fontsize=18)
-plt.savefig('Figure_03_07a.png',dpi=300)
+plt.savefig('Figure_02_07a.png',dpi=300)
 plt.show()
 
 import plotly.graph_objects as go
@@ -145,7 +145,7 @@ fig = go.Figure( data=[go.Scatter3d(x=points[:,0], y=points[:,1], z=points[:,2],
                                     mode='markers', marker=dict(size=6,color='black') )])
 
 fig.update_layout(margin=dict(l=0,r=0,b=0,t=0))
-plt.savefig('Figure_03_07b.png',dpi=300)
+plt.savefig('Figure_02_07b.png',dpi=300)
 fig.show()
 
 
