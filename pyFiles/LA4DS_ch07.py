@@ -48,7 +48,7 @@ for i in range(3):
   axs[i].set_yticks([])
 
 plt.tight_layout()
-plt.savefig('Figure_08_01.png',dpi=300)
+plt.savefig('Figure_07_01.png',dpi=300)
 plt.show()
 
 
@@ -133,7 +133,7 @@ for a in axs.flatten():
   a.set_yticks([])
   
 plt.tight_layout()
-plt.savefig('Figure_08_04.png',dpi=300)
+plt.savefig('Figure_07_04.png',dpi=300)
 plt.show()
 
 
@@ -241,7 +241,7 @@ for a in axs.flatten():
   a.set_yticks([])
 
 
-plt.savefig('Figure_08_03.png',dpi=300)
+plt.savefig('Figure_07_03.png',dpi=300)
 plt.show()
 
 
@@ -395,7 +395,7 @@ plt.axis('square')
 plt.xlim([-2,2])
 plt.ylim([-2,2])
 plt.legend()
-plt.savefig('Figure_08_06.png',dpi=300)
+plt.savefig('Figure_07_06.png',dpi=300)
 plt.show()
 
 
@@ -453,7 +453,7 @@ for i in range(2):
   axs[i].set_yticks([])
 
 plt.tight_layout()
-plt.savefig('Figure_08_05.png',dpi=300)
+plt.savefig('Figure_07_05.png',dpi=300)
 plt.show()
 
 
@@ -513,7 +513,7 @@ axs[1].set_xlabel('Matrix size')
 axs[1].set_ylabel('Log Kappa')
 axs[1].set_title('Matrix condition number')
 
-plt.savefig('Figure_08_07.png',dpi=300)
+plt.savefig('Figure_07_07.png',dpi=300)
 plt.show()
 
 ## interesting to see the "identity" matrix
