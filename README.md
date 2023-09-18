@@ -1,6 +1,6 @@
 # LinAlg4DataScience
 책과 함께 제공되는 코드입니다. 
-"데이터 과학자를 위한 실전 선형대수학"
+"개발자를 위한 실전 선형대수학"
 
 원서 구매 링크:
 https://www.amazon.com/Practical-Linear-Algebra-Data-Science/dp/1098120612/
