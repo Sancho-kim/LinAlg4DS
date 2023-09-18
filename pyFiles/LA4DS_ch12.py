@@ -53,7 +53,7 @@ for i in range(2):
   axs[i].grid()
   axs[i].legend()
 
-plt.savefig('Figure_13_01.png',dpi=300)
+plt.savefig('Figure_12_01.png',dpi=300)
 plt.show()
 
 
@@ -364,7 +364,7 @@ plt.ylabel('Frobenius distance to original matrix')
 plt.xlabel('Type of eigenvalue swapping')
 plt.title('Reconstruction accuracy')
 
-plt.savefig('Figure_13_03.png',dpi=300)
+plt.savefig('Figure_12_03.png',dpi=300)
 plt.show()
 
 
@@ -388,7 +388,7 @@ plt.xlim([-1.5,1.5])
 plt.ylim([-1.5,1.5])
 plt.xlabel('Real')
 plt.ylabel('Imag')
-plt.savefig('Figure_13_04.png',dpi=300)
+plt.savefig('Figure_12_04.png',dpi=300)
 plt.show()
 
 
@@ -488,7 +488,7 @@ axs[0].set_title('$\mathbf{V}^T\mathbf{V}$')
 axs[1].imshow(VBV,cmap='gray')
 axs[1].set_title('$\mathbf{V}^T\mathbf{B}\mathbf{V}$')
 
-plt.savefig('Figure_13_05.png',dpi=300)
+plt.savefig('Figure_12_05.png',dpi=300)
 plt.show()
 
 
