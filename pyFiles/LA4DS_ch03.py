@@ -60,7 +60,7 @@ axs[1,1].axis('square')
 
 
 plt.tight_layout()
-plt.savefig('Figure_04_01.png',dpi=300) # write out the fig to a file
+plt.savefig('Figure_03_01.png',dpi=300) # write out the fig to a file
 plt.show()
 
 
@@ -139,7 +139,7 @@ h[1].set_marker('s')
 plt.xlabel('Mean offset')
 plt.ylabel('r or c')
 plt.legend(['Pearson','Cosine sim.'])
-plt.savefig('Figure_04_02.png',dpi=300) # write out the fig to a file
+plt.savefig('Figure_03_02.png',dpi=300) # write out the fig to a file
 plt.show()
 
 
@@ -208,7 +208,7 @@ axs[0].set_xlim([-15,15])
 axs[1].plot(signal,'ks-')
 axs[1].set_title('Time series signal')
 
-plt.savefig('Figure_04_04ab.png',dpi=300)
+plt.savefig('Figure_03_04ab.png',dpi=300)
 plt.show()
 
 # initialize the feature map as zeros
@@ -235,7 +235,7 @@ plt.setp(stemlines,'color',[.7,.7,.7])
 plt.setp(markers,'color',[.7,.7,.7])
 
 axs[1].legend()
-plt.savefig('Figure_04_04c.png',dpi=300)
+plt.savefig('Figure_03_04c.png',dpi=300)
 plt.show()
 
 
@@ -263,7 +263,7 @@ axs[0].set_xlim([-1,Nsignal])
 axs[1].plot(timeseries,'ks-')
 axs[1].set_title('Time series signal')
 
-plt.savefig('Figure_04_06ab.png',dpi=300)
+plt.savefig('Figure_03_06ab.png',dpi=300)
 plt.show()
 
 # make a copy of the signal for filtering
@@ -284,7 +284,7 @@ axs[1].plot(timeseries,color='k',label='Original',linewidth=1)
 axs[1].plot(filtsig,'--',color=[.6,.6,.6],label='Smoothed',linewidth=2)
 axs[1].legend()
 
-plt.savefig('Figure_04_06c.png',dpi=300)
+plt.savefig('Figure_03_06c.png',dpi=300)
 plt.show()
 
 # define the kernel (a sorta-kinda Gaussian)
@@ -392,7 +392,7 @@ for iteri in range(3):
   axs[iteri+1].set_yticks([])
 
 
-plt.savefig('Figure_04_03.png',dpi=300)
+plt.savefig('Figure_03_03.png',dpi=300)
 plt.show()
 
 
