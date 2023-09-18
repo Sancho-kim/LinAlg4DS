@@ -40,7 +40,7 @@ axs[1].axis([-6,6,-6,6])
 axs[1].set_title('Data in PC space')
 
 plt.tight_layout()
-plt.savefig('Figure_15_01.png',dpi=300)
+plt.savefig('Figure_14_01.png',dpi=300)
 plt.show()
 
 # Empirical demonstration that variance and squared vector norm are equal.
@@ -73,7 +73,7 @@ data
 
 # show some data in line plots
 data.plot(figsize=(15,6),ylabel='Market returns')
-plt.savefig('Figure_15_03a.png',dpi=300)
+plt.savefig('Figure_14_03a.png',dpi=300)
 plt.show()
 
 # Seaborn's pairplot shows a lot of positive correlations
@@ -85,7 +85,7 @@ plt.show()
 
 plt.figure(figsize=(8,8))
 heatmap = sns.heatmap(data.corr(),vmin=-1,vmax=1,annot=True,cmap='bwr')
-plt.savefig('Figure_15_03b.png',dpi=300)
+plt.savefig('Figure_14_03b.png',dpi=300)
 plt.show()
 
 
@@ -106,7 +106,7 @@ plt.colorbar(shrink=.82)
 plt.title('Data covariance')
 plt.xticks(range(X.shape[1]),labels=data.columns,rotation=90)
 plt.yticks(range(X.shape[1]),labels=data.columns)
-plt.savefig('Figure_15_03c.png',dpi=300)
+plt.savefig('Figure_14_03c.png',dpi=300)
 plt.show()
 
 # Step 2: eigendecomposition
@@ -197,7 +197,7 @@ for i in range(2):
 
 
 plt.tight_layout()
-plt.savefig('Figure_15_04.png',dpi=300)
+plt.savefig('Figure_14_04.png',dpi=300)
 plt.show()
 
 
@@ -314,7 +314,7 @@ plt.plot([0,Vt[0,1]],[0,Vt[1,1]],'r:',linewidth=5,label='Comp 2')
 
 plt.legend()
 plt.grid()
-plt.savefig('Figure_15_05.png',dpi=300)
+plt.savefig('Figure_14_05.png',dpi=300)
 plt.show()
 
 
@@ -340,7 +340,7 @@ ax = sns.jointplot(x=alldata[:,0],y=alldata[:,1],hue=labels)
 ax.ax_joint.set_xlabel('Data axis 1')
 ax.ax_joint.set_ylabel('Data axis 2')
 ax.plot_joint(sns.kdeplot)
-plt.savefig('Figure_15_02a.png',dpi=300)
+plt.savefig('Figure_14_02a.png',dpi=300)
 plt.show()
 
 
@@ -400,7 +400,7 @@ for i in range(2):
   axs[i].legend()
 
 plt.tight_layout()
-plt.savefig('Figure_15_06ab.png',dpi=300)
+plt.savefig('Figure_14_06ab.png',dpi=300)
 plt.show()
 
 # prediction (converted to ints)
@@ -416,7 +416,7 @@ plt.xlabel('Sample number')
 plt.ylabel('Predicted class')
 plt.yticks([0,1],labels=['Class 0','Class 1'])
 plt.title(f'Accuracy = {100*np.mean(predictedLabel==labels):.2f}%')
-plt.savefig('Figure_15_06c.png',dpi=300)
+plt.savefig('Figure_14_06c.png',dpi=300)
 plt.show()
 
 # redraw the jointplot in the GED space (used in Figure 2)
@@ -424,7 +424,7 @@ ax = sns.jointplot(x=projA[:,0],y=projA[:,1],hue=labels,xlim=[-6,6],ylim=[-6,6])
 ax.ax_joint.set_xlabel('LDA axis 1')
 ax.ax_joint.set_ylabel('LDA axis 2')
 ax.plot_joint(sns.kdeplot)
-plt.savefig('Figure_15_02b.png',dpi=300)
+plt.savefig('Figure_14_02b.png',dpi=300)
 plt.show()
 
 
@@ -457,7 +457,7 @@ plt.yticks([0,1],labels=['Class 0','Class 1'])
 plt.ylim([-.5,1.5])
 plt.legend()
 plt.title(f'Accuracy = {100*np.mean(ldamodel.predict(alldata)==labels):.2f}%')
-plt.savefig('Figure_15_07.png',dpi=300)
+plt.savefig('Figure_14_07.png',dpi=300)
 plt.show()
 
 
@@ -494,7 +494,7 @@ plt.plot(shrinkage,accuracies,'ks-',markersize=10,markerfacecolor='w',linewidth=
 plt.xlabel('Shrinkage amount')
 plt.ylabel('Prediction accuracy on validation trials')
 plt.title('Effect of shrinkage on model performance')
-plt.savefig('Figure_15_08.png',dpi=300)
+plt.savefig('Figure_14_08.png',dpi=300)
 plt.show()
 
 
@@ -567,7 +567,7 @@ for i in range(numLayers):
 
 
 plt.tight_layout()
-plt.savefig('Figure_15_09.png',dpi=300)
+plt.savefig('Figure_14_09.png',dpi=300)
 plt.show()
 
 
@@ -594,7 +594,7 @@ axs[2].imshow((strav-stravRec)**2,cmap='gray',vmin=0,vmax=1e-1)
 axs[2].set_title('Squared errors')
 
 plt.tight_layout()
-plt.savefig('Figure_15_10.png',dpi=300)
+plt.savefig('Figure_14_10.png',dpi=300)
 plt.show()
 
 # compute sizes of the images
@@ -641,7 +641,7 @@ plt.plot(k,kError,'ks-')
 plt.xlabel('Rank of reconstruction')
 plt.ylabel('Error from original')
 plt.title('Reconstruction accuracy')
-plt.savefig('Figure_15_11.png',dpi=300)
+plt.savefig('Figure_14_11.png',dpi=300)
 plt.show()
 
 
@@ -682,7 +682,7 @@ axs[2].imshow(stravNoise,cmap='gray')
 axs[2].set_title('Contaminated picture')
 
 plt.tight_layout()
-plt.savefig('Figure_15_12.png',dpi=300)
+plt.savefig('Figure_14_12.png',dpi=300)
 plt.show()
 
 # SVD
@@ -741,7 +741,7 @@ for i in range(numLayers):
 
 
 plt.tight_layout()
-plt.savefig('Figure_15_13.png',dpi=300)
+plt.savefig('Figure_14_13.png',dpi=300)
 plt.show()
 
 
@@ -781,7 +781,7 @@ axs[2].imshow(stravRecNoNoise,cmap='gray',vmin=.1,vmax=.9)
 axs[2].set_title('Noise projected out')
 
 plt.tight_layout()
-plt.savefig('Figure_15_14.png',dpi=300)
+plt.savefig('Figure_14_14.png',dpi=300)
 plt.show()
 
 # histogram of noise reconstruction
