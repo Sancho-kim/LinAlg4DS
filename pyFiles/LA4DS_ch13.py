@@ -34,7 +34,7 @@ axs[3].imshow(Vt,cmap='gray',aspect='equal')
 axs[3].set_title('$\mathbf{V}$\n(right singular vects)')
 
 plt.tight_layout()
-plt.savefig('Figure_14_02.png',dpi=300)
+plt.savefig('Figure_13_02.png',dpi=300)
 plt.show()
 
 
@@ -153,7 +153,7 @@ axs[3].set_title(f'V$^T$ (cond={np.linalg.cond(Vt):.3f})')
 
 
 plt.tight_layout()
-plt.savefig('Figure_14_04.png',dpi=300)
+plt.savefig('Figure_13_04.png',dpi=300)
 plt.show()
 
 
@@ -198,7 +198,7 @@ axs[3].set_title('V$^T$')
 
 
 plt.tight_layout()
-plt.savefig('Figure_14_05a.png',dpi=300)
+plt.savefig('Figure_13_05a.png',dpi=300)
 plt.show()
 
 
@@ -208,7 +208,7 @@ plt.plot(100*s/np.sum(s),'ks-',markersize=10)
 plt.xlabel('Component index')
 plt.ylabel('Variance explained (%)')
 plt.title('Scree plot')
-plt.savefig('Figure_14_05b.png',dpi=300)
+plt.savefig('Figure_13_05b.png',dpi=300)
 plt.show()
 
 ## now show the first N "layers" separately and summed
@@ -238,7 +238,7 @@ for i in range(numLayers):
 
 
 plt.tight_layout()
-plt.savefig('Figure_14_05c.png',dpi=300)
+plt.savefig('Figure_13_05c.png',dpi=300)
 plt.show()
 
 
@@ -299,7 +299,7 @@ print(np.round( Rinv - Apinv ,5))
 
 
 
-# the matrix (from chapter 12)
+# the matrix (from chapter 11)
 M = np.array([ [-1,1],
                [-1,2] ])
 
