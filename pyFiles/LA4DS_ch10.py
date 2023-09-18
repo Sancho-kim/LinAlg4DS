@@ -36,7 +36,7 @@ for n,y,yHat in zip(x,y,yHat):
   plt.plot([n,n],[y,yHat],'--',color=[.8,.8,.8],zorder=-10)
 
 plt.legend()
-plt.savefig('Figure_11_02.png',dpi=300)
+plt.savefig('Figure_10_02.png',dpi=300)
 plt.show()
 
 
@@ -53,7 +53,7 @@ plt.xlim([-1,15])
 plt.ylim([0,100])
 plt.grid()
 plt.xticks(range(0,15,2))
-plt.savefig('Figure_11_03.png',dpi=300)
+plt.savefig('Figure_10_03.png',dpi=300)
 plt.show()
 
 # Build a statistical model
@@ -92,7 +92,7 @@ plt.ylim([0,100])
 plt.xticks(range(0,15,2))
 plt.legend(['Real data','Predicted data','Residual'])
 plt.title(f'SSE = {np.sum((pred_happiness-happiness)**2):.2f}')
-plt.savefig('Figure_11_04.png',dpi=300)
+plt.savefig('Figure_10_04.png',dpi=300)
 plt.show()
 
 # Build a statistical model with an intercept
@@ -131,7 +131,7 @@ plt.ylim([0,100])
 plt.xticks(range(0,15,2))
 plt.legend(['Real data','Predicted data','Residual'])
 plt.title(f'SSE = {np.sum((pred_happiness-happiness)**2):.2f}')
-plt.savefig('Figure_11_05.png',dpi=300)
+plt.savefig('Figure_10_05.png',dpi=300)
 plt.show()
 
 
@@ -152,7 +152,7 @@ plt.plot(res,pred_happiness,'ko',markersize=12)
 plt.xlabel('Residual error')
 plt.ylabel('Model-predicted values')
 plt.title(f'r = {np.corrcoef(pred_happiness,res)[0,1]:.20f}')
-plt.savefig('Figure_11_06.png',dpi=300)
+plt.savefig('Figure_10_06.png',dpi=300)
 plt.show()
 
 # correlation is smaller because we're dividing by the vector norms, e.g.,
@@ -269,7 +269,7 @@ for axi,y in zip(axs,[happiness,happiness_oops1,happiness_oops2]):
 
 
 plt.tight_layout()
-plt.savefig('Figure_11_07.png',dpi=300)
+plt.savefig('Figure_10_07.png',dpi=300)
 plt.show()
 
 
@@ -320,7 +320,7 @@ axs[2].set_title('Via inv()')
 for a in axs: a.set(xticks=[],yticks=[])
 
 plt.tight_layout()
-plt.savefig('Figure_11_08.png',dpi=300)
+plt.savefig('Figure_10_08.png',dpi=300)
 plt.show()
 
 # show they are equivalent 
