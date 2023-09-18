@@ -32,7 +32,7 @@ axs[2].imshow(C,cmap='gray')
 
 for i in range(3): axs[i].axis('off')
 plt.tight_layout()
-plt.savefig('Figure_05_01.png',dpi=300)
+plt.savefig('Figure_04_01.png',dpi=300)
 plt.show()
 
 
@@ -135,7 +135,7 @@ for mi,M in enumerate(matrices):
 
 
 
-plt.savefig('Figure_05_02.png',dpi=300)
+plt.savefig('Figure_04_02.png',dpi=300)
 plt.tight_layout()
 plt.show()
 
@@ -290,7 +290,7 @@ plt.xlim([-7,7])
 plt.ylim([-7,7])
 plt.legend()
 plt.grid()
-plt.savefig('Figure_05_05a.png',dpi=300)
+plt.savefig('Figure_04_05a.png',dpi=300)
 plt.show()
 
 # some matrix
@@ -307,7 +307,7 @@ plt.xlim([-7,7])
 plt.ylim([-7,7])
 plt.legend()
 plt.grid()
-plt.savefig('Figure_05_05b.png',dpi=300)
+plt.savefig('Figure_04_05b.png',dpi=300)
 plt.show()
 
 
@@ -375,7 +375,7 @@ for (j,i),num in np.ndenumerate(C_1):
   axs[1].text(i,j,num,color=[.8,.8,.8],ha='center',va='center')
 
 
-plt.savefig('Figure_05_06.png',dpi=300)
+plt.savefig('Figure_04_06.png',dpi=300)
 plt.show()
 
 # cut it into blocks
@@ -409,7 +409,7 @@ axs[1].set_title('Block-shifted')
 for (j,i),num in np.ndenumerate(newMatrix):
   axs[1].text(i,j,num,color=[.8,.8,.8],ha='center',va='center')
 
-plt.savefig('Figure_05_07.png',dpi=300)
+plt.savefig('Figure_04_07.png',dpi=300)
 plt.show()
 
 def addMatrices(A,B):
