@@ -63,7 +63,7 @@ for a in axs:
   a.set_yticks([])
 
 plt.tight_layout()
-plt.savefig('Figure_09_01.png',dpi=300)
+plt.savefig('Figure_08_01.png',dpi=300)
 plt.show()
 
 
@@ -244,7 +244,7 @@ plt.xticks(range(2),labels=['OldSchool','QR'])
 plt.ylim([0,np.max(sse)*1.1])
 plt.ylabel('Eucl. distance to identity')
 plt.title(f'Inverse error ({n}x{n} matrix)',ha='center')
-plt.savefig('Figure_09_03.png',dpi=300)
+plt.savefig('Figure_08_03.png',dpi=300)
 plt.show()
 
 
@@ -290,7 +290,7 @@ plt.xticks(range(2),labels=['OldSchool','QR'])
 plt.ylim([0,np.max(sse)*1.1])
 plt.ylabel('Eucl. distance to identity')
 plt.title(f'Inverse error ({n}x{n} matrix)',ha='center')
-plt.savefig('Figure_09_04a.png',dpi=300)
+plt.savefig('Figure_08_04a.png',dpi=300)
 plt.show()
 
 # and plot
@@ -304,7 +304,7 @@ plt.xticks(range(2),labels=['OldSchool','QR'])
 plt.ylim([0,np.max(sse)*1.1])
 plt.ylabel('Eucl. distance to identity')
 plt.title(f'Inverse error ({n}x{n} matrix)',ha='center')
-plt.savefig('Figure_09_04b.png',dpi=300)
+plt.savefig('Figure_08_04b.png',dpi=300)
 plt.show()
 
 
