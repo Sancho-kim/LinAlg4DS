@@ -95,7 +95,7 @@ print(vPlusW)
 # Note that here we don't need to worry about vector orientation (row vs. column), 
 # so for simplicity the vectors are created orientationless.
 
-# Where's the code to generate Figure 3-2? 
+# Where's the code to generate Figure 2-2? 
 # It's exercise 0!
 
 # Same v and w as above for comparison
@@ -106,7 +106,7 @@ print(v)
 print(w)
 print(vMinusW)
 
-# Code for Figure 3-2 is part of Exercise 0.
+# Code for Figure 2-2 is part of Exercise 0.
 
 # a scalar
 s = -1/2
