@@ -3,11 +3,13 @@
 
 도서 구매 링크
 <br>
-한빛출판네트워크:
+한빛출판네트워크: https://hanbit.co.kr/store/books/look.php?p_code=B4279863215
 <br>
-YES24: 
+YES24: https://www.yes24.com/Product/Goods/122586598
 <br>
-알라딘:
+알라딘: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=325100604
+<br>
+교보문고: https://product.kyobobook.co.kr/detail/S000209345747
 <br>
 
 원서 구매 링크
